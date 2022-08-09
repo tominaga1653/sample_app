@@ -13,6 +13,7 @@ class ListsController < ApplicationController
   end
 
   def index
+    puts "作成した木ー　#{ENV['SECRET_KEY']}"
     @lists = List.all
   end
 
